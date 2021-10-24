@@ -1,0 +1,71 @@
+// -------------------------------------------
+// media screen
+// -------------------------------------------
+
+// min-width
+
+@mixin media-screen-sp {
+  @media screen and (min-width: #{$media-screen-sp}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-tab {
+  @media screen and (min-width: #{$media-screen-tab}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-pc {
+  @media screen and (min-width: #{$media-screen-pc}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-pc-wide {
+  @media screen and (min-width: #{$media-screen-pc-wide}px) {
+    @content;
+  }
+}
+
+// max-width
+
+@mixin media-screen-sp-max {
+  @media screen and (max-width: #{$media-screen-sp - 1}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-tab-max {
+  @media screen and (max-width: #{$media-screen-tab - 1}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-pc-max {
+  @media screen and (max-width: #{$media-screen-pc - 1}px) {
+    @content;
+  }
+}
+
+@mixin media-screen-pc-wide-max {
+  @media screen and (max-width: #{$media-screen-pc-wide - 1}px) {
+    @content;
+  }
+}
+
+// min-height
+
+@mixin media-screen-height($height: 768) {
+  @media screen and (min-height: #{$height}px) {
+    @content;
+  }
+}
+
+// max-height
+
+@mixin media-screen-height-max($height: 767) {
+  @media screen and (max-height: #{$height}px) {
+    @content;
+  }
+}

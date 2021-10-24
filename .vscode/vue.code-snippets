@@ -1,0 +1,72 @@
+{
+  "vue3-single-file-component": {
+    "prefix": ["vue v3 base"],
+    "body": [
+      "<template>",
+      "\t<div class=\"${1}\">",
+      "\t\t${2}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script lang=\"ts\">",
+      "import {",
+      "\tdefineComponent,",
+      "\t// onBeforeMount,",
+      "\t// onMounted,",
+      "\t// onBeforeUpdate,",
+      "\t// onUpdated,",
+      "\t// onBeforeUnmount,",
+      "\t// onUnmounted,",
+      "\t// ref,",
+      "\t// reactive,",
+      "\t// toRefs,",
+      "\t// computed,",
+      "\t// watch,",
+      "\t// watchEffect,",
+      "\t// Ref,",
+      "\t// ComputedRef,",
+      "\t// PropType,",
+      "} from 'vue'",
+      "",
+      "export default defineComponent({",
+      "\tprops: {",
+      "\t\t${3}",
+      "\t},",
+      "\tsetup (_props) {",
+      "\t\treturn {}",
+      "\t}",
+      "})",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      ".${1} {}",
+      "</style>"
+    ],
+    "description": "Base for Vue3 File Composition API with SCSS",
+    "scope": "vue"
+  },
+  "import my components": {
+    "prefix": ["import my components"],
+    "body": ["import ${1} from '~/components/${2}/${1}.vue'"],
+    "description": "Base import for Nuxt-Vue File",
+    "scope": "vue, typescript"
+  },
+  "import my schema models": {
+    "prefix": ["import schema models"],
+    "body": ["import { ${1} } from '~/types/schema-models'"],
+    "description": "Base import for schema models file",
+    "scope": "vue, typescript"
+  },
+  "import my utils": {
+    "prefix": ["import utils"],
+    "body": ["import { ${1} } from '~/utils/${2}'"],
+    "description": "Base import for utils file",
+    "scope": "vue, typescript"
+  },
+  "import my composables": {
+    "prefix": ["import composables"],
+    "body": ["import { ${1} } from '~/composables/${2}'"],
+    "description": "Base import for composables file",
+    "scope": "vue, typescript"
+  }
+}

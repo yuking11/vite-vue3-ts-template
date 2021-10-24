@@ -1,0 +1,61 @@
+{
+  "name": "vue3-vite-ts",
+  "description": "A Vue3 / Vite / TS starter template",
+  "version": "0.0.0",
+  "author": "yuking11",
+  "license": "MIT",
+  "engines": {
+    "node": "16.8.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "local": "vite --mode local-dev",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vue-tsc --noEmit && vite build --mode development",
+    "serve": "vite preview",
+    "lint:markup": "vue-tsc --noEmit",
+    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "lint:style": "stylelint 'src/**/*.{vue,scss,css}' --ignore-path .gitignore",
+    "format:script": "eslint --ext .ts,vue --fix --ignore-path .gitignore .",
+    "format:style": "stylelint 'src/**/*.{vue,scss,css}' --fix --ignore-path .gitignore"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": "eslint --fix",
+    "*.{css,scss,vue}": "stylelint --fix",
+    "*.{ts,js,scss,vue}": "prettier -w -u"
+  },
+  "dependencies": {
+    "vue": "^3.2.16",
+    "vue-meta": "^3.0.0-alpha.8",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^8.0.0",
+    "@yzfe/svgicon": "^1.1.0",
+    "@yzfe/vue3-svgicon": "^1.0.1",
+    "eslint": "^8.1.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^22.0.0",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vite-plugin-svgicon": "^1.0.0",
+    "vue-tsc": "^0.3.0"
+  }
+}

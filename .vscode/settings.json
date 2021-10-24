@@ -1,0 +1,51 @@
+{
+  /* Linter and Formatter */
+  // linter
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true, // eslint
+    "source.fixAll.tslint": true, // tslint
+    "source.fixAll.stylelint": true // Stylelint
+  },
+  // formatter
+  // デフォルトフォーマッターの設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue-html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // other
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  // "javascript.validate.enable": false,
+  "cSpell.words": [
+    "absence",
+    "metainfo",
+    "passes",
+    "pick",
+    "reseter",
+    "saturday",
+    "staged",
+    "subtract",
+    "sunday",
+    "today",
+    "unmount",
+    "unsaved",
+    "vite",
+    "vitejs"
+  ]
+}

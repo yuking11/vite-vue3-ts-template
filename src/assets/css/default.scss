@@ -1,0 +1,71 @@
+// =====================================================
+//
+// Default
+//
+// =====================================================
+
+body,
+input,
+textarea,
+dd {
+  font-size: fs($base-font-size);
+}
+
+body {
+  width: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: $text-rendering;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  word-wrap: break-all;
+  word-break: break-all;
+}
+
+a {
+  color: $main-color;
+  &:hover {
+    color: lighten($main-color, 4%);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+textarea,
+select {
+  border-radius: 4px;
+  &:focus {
+    outline-color: $main-color;
+  }
+}
+
+ol,
+ul {
+  padding-left: $base-space * 1.5;
+}
+
+li {
+  &::before {
+    display: none;
+  }
+}
+
+::selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+}
+
+::placeholder {
+  color: $base-placeholder-color;
+}
+input::placeholder {
+  color: $base-placeholder-color;
+}
+textarea::placeholder {
+  color: $base-placeholder-color;
+}

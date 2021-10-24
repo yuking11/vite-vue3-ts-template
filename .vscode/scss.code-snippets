@@ -1,0 +1,37 @@
+{
+  "media screen tablet": {
+    "prefix": "mstab",
+    "body": ["@include media-screen-tab {", "  $1", "}"],
+    "description": "create media screen tablet"
+  },
+  "media screen pc": {
+    "prefix": "mspc",
+    "body": ["@include media-screen-pc {", "  $1", "}"],
+    "description": "create media screen pc"
+  },
+  "media screen pc wide": {
+    "prefix": "mswd",
+    "body": ["@include media-screen-pc-wide {", "  $1", "}"],
+    "description": "create media screen pc wide"
+  },
+  "font size": {
+    "prefix": "fz",
+    "body": ["font-size: fs($1);"],
+    "description": "font size"
+  },
+  "line height": {
+    "prefix": "lh",
+    "body": ["line-height: lh($1);"],
+    "description": "line height"
+  },
+  "text indent": {
+    "prefix": "indent",
+    "body": ["@include indent($1);"],
+    "description": "text indent"
+  },
+  "ellipsis": {
+    "prefix": "@elps",
+    "body": ["@include ellipsis();"],
+    "description": "text ellipsis"
+  }
+}

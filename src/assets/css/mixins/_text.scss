@@ -1,0 +1,27 @@
+// -------------------------------------------
+// text
+// -------------------------------------------
+
+// text-indent
+// ================================== //
+@mixin indent($margin: 1em) {
+  text-indent: -($margin);
+  padding-left: $margin;
+}
+
+// letter spacing for PSD
+// ================================== //
+@mixin lts($value, $center: false) {
+  @if $center == true {
+    margin-left: ($value / 1000) * 1em;
+  }
+  letter-spacing: ($value / 1000) * 1em;
+}
+
+// ellipsis
+// ================================== //
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

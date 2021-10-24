@@ -1,0 +1,10 @@
+// -------------------------------------------
+// button
+// -------------------------------------------
+
+@mixin button-reset {
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
