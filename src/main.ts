@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createMetaManager } from 'vue-meta'
 import App from '~/App.vue'
-import router from '~/route'
+import router from '~/router'
 import store from '~/store'
 import { VueSvgIconPlugin } from '@yzfe/vue3-svgicon'
 import '@yzfe/svgicon/lib/svgicon.css'
