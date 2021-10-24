@@ -56,9 +56,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env.*.local
-.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -92,8 +89,8 @@ sw.*
 *.swp
 
 # dotenv environment variables file
-/**/.env
-/**/.env.*
+/**/.env.local
+/**/.env.*.local
 
 # vscode
 .history/
