@@ -10,5 +10,4 @@ const app = createApp(App).use(router).use(store).use(createMetaManager()).use(V
   tagName: 'VueSvgIcon',
 })
 
-await router.isReady()
-app.mount('#app')
+router.isReady().then(() => app.mount('#app'))
