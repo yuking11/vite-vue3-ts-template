@@ -16,14 +16,10 @@
     "lint:markup": "vue-tsc --noEmit",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint 'src/**/*.{vue,scss,css}' --ignore-path .gitignore",
+    "lint-staged": "lint-staged",
     "format:script": "eslint --ext .ts,vue --fix --ignore-path .gitignore .",
-    "format:style": "stylelint 'src/**/*.{vue,scss,css}' --fix --ignore-path .gitignore"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
+    "format:style": "stylelint 'src/**/*.{vue,scss,css}' --fix --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,js,vue}": "eslint --fix",
