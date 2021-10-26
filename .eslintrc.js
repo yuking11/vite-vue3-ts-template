@@ -11,15 +11,22 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    'prettier',
+    // '@vue/prettier',
+    // '@vue/prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaVersion: 2021,
   },
-  plugins: [],
+  plugins: ['vue', '@typescript-eslint'],
   settings: {
     'import/ignore': ['node_modules'],
+  },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
   },
   // add your custom rules here
   rules: {
@@ -32,5 +39,6 @@ module.exports = {
     'no-debugger': dev.includes(process.env.MODE) ? 'off' : 'error',
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'vue/no-ref-as-operand': ['error'],
+    // 'vue/require-default-prop': 'off',
   },
 }
