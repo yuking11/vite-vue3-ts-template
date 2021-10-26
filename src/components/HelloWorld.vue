@@ -1,3 +1,24 @@
+<script setup lang="ts">
+import { ref, toRefs } from 'vue'
+
+// set props
+
+const props = withDefaults(
+  defineProps<{
+    msg: string
+  }>(),
+  {
+    msg: '',
+  }
+)
+
+const { msg } = toRefs(props)
+
+// set data
+
+const count = ref(0)
+</script>
+
 <template>
   <h1>{{ msg }}</h1>
 
@@ -22,42 +43,6 @@
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
-
-<script lang="ts">
-import {
-  defineComponent,
-  ref,
-  // reactive,
-  // toRefs,
-  // computed,
-  // watch,
-  // watchEffect,
-  // Ref,
-  // ComputedRef,
-  PropType,
-} from 'vue'
-
-type Props = Readonly<{
-  msg: string
-}>
-
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String as PropType<Props['msg']>,
-      default: '',
-    },
-  },
-  setup() {
-    const count = ref(0)
-
-    return {
-      count,
-    }
-  },
-})
-</script>
 
 <style scoped lang="scss">
 a {

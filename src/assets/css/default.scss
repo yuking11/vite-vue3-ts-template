@@ -63,9 +63,11 @@ li {
 ::placeholder {
   color: $base-placeholder-color;
 }
+
 input::placeholder {
   color: $base-placeholder-color;
 }
+
 textarea::placeholder {
   color: $base-placeholder-color;
 }

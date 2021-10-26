@@ -1,26 +1,18 @@
+<script setup lang="ts">
+// set data
+
+const VITE_APP_TITLE = import.meta.env.VITE_APP_TITLE
+</script>
+
 <template>
   <metainfo>
-    <template v-slot:title="{ content }">{{
+    <template #title="{ content }">{{
       content ? `${content} | ${VITE_APP_TITLE}` : VITE_APP_TITLE
     }}</template>
-    <template v-slot:description="{ content }">{{ content }}</template>
+    <template #description="{ content }">{{ content }}</template>
   </metainfo>
   <router-view />
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    const VITE_APP_TITLE = import.meta.env.VITE_APP_TITLE
-
-    return {
-      VITE_APP_TITLE,
-    }
-  },
-})
-</script>
 
 <style lang="scss">
 @import '~/assets/css/default';

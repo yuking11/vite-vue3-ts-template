@@ -1,4 +1,62 @@
 {
+  "vue3-setup-script-component": {
+    "prefix": ["vue3 setup"],
+    "body": [
+      "<script setup lang=\"ts\">",
+      "import {",
+      "\t// onBeforeMount,",
+      "\t// onMounted,",
+      "\t// onBeforeUpdate,",
+      "\t// onUpdated,",
+      "\t// onBeforeUnmount,",
+      "\t// onUnmounted,",
+      "\t// ref,",
+      "\t// reactive,",
+      "\t// toRefs,",
+      "\t// computed,",
+      "\t// watch,",
+      "\t// watchEffect,",
+      "\t// Ref,",
+      "\t// ComputedRef,",
+      "} from 'vue'",
+      "",
+      "${3}",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div class=\"${1}\">",
+      "\t\t${2}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      ".${1} {}",
+      "</style>"
+    ],
+    "description": "Base for Vue3 File Setup Script with SCSS",
+    "scope": "vue"
+  },
+  "vue3-default-props": {
+    "prefix": ["vue3 default props"],
+    "body": [
+      "const props = withDefaults(",
+      "\tdefineProps<{",
+      "\t\t${1}: ${2}",
+      "\t}>(),",
+      "\t{",
+      "\t\t${1}: '${3}',",
+      "\t}",
+      ")"
+    ],
+    "description": "Base for Vue3 default props",
+    "scope": "vue, typescript"
+  },
+  "vue3-define-props": {
+    "prefix": ["vue3 define props"],
+    "body": ["const props = defineProps<{", "\t${1}: ${2}", "}>()"],
+    "description": "Base for Vue3 define props",
+    "scope": "vue, typescript"
+  },
   "vue3-single-file-component": {
     "prefix": ["vue v3 base"],
     "body": [
