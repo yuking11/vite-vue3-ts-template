@@ -42,9 +42,6 @@ const onDecrement = () => {
     <button type="button" @click="onIncrement">increment</button>
     <button type="button" @click="onDecrement">decrement</button>
   </div>
-  <div>
-    <img src="@/assets/svg/info_outline.svg" alt="" />
-  </div>
 </template>
 
 <style lang="scss" scoped>
