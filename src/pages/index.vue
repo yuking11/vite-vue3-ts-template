@@ -25,7 +25,7 @@ import HelloWorld from '~/components/HelloWorld.vue'
 useMeta({
   title: '',
   description: {
-    content: `${import.meta.env.VITE_APP_NAME}のサイトです。`,
+    content: '',
   },
 })
 
@@ -34,8 +34,6 @@ useMeta({
 const store = useStore()
 
 const count = computed(() => store.state.common.count)
-
-const VITE_APP_TITLE = import.meta.env.VITE_APP_TITLE
 
 // methods
 
@@ -52,10 +50,6 @@ const onDecrement = () => {
   <div class="page-index">
     <img alt="Vue logo" src="@/assets/img/logo.png" />
     <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-    <h3>{{ VITE_APP_TITLE }}</h3>
-    <p>
-      <router-link :to="{ name: 'About' }">About</router-link>
-    </p>
     <div>
       store count: {{ count }}<br />
       <button type="button" @click="onIncrement">increment</button>

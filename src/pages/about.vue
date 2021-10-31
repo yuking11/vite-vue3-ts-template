@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
 import { useMeta } from 'vue-meta'
 import { useStore } from 'vuex'
 import SvgIcon from '~/components/modules/SvgIcon.vue'
 
 // set meta
 
+const title = ref('about this site.')
+
 useMeta({
-  title: '当サイトについて',
+  title: title.value,
   description: {
-    content: `${import.meta.env.VITE_APP_NAME}について説明するページです。`,
+    content: `On this page, you will find information about ${import.meta.env.VITE_APP_NAME}.`,
   },
 })
 
@@ -31,16 +33,15 @@ const onDecrement = () => {
 </script>
 
 <template>
-  <div class="page-about">About</div>
-
-  <p>
-    <router-link :to="{ name: 'Index' }">Top</router-link>
-  </p>
-  <div>
-    <SvgIcon :name="'info_outline'" width="24" height="24" title="Information" class="icon" />
-    store count: {{ count }}<br />
-    <button type="button" @click="onIncrement">increment</button>
-    <button type="button" @click="onDecrement">decrement</button>
+  <div class="page-about">
+    <h2>About</h2>
+    <h3>{{ title }}</h3>
+    <div>
+      <SvgIcon :name="'info_outline'" width="24" height="24" title="Information" class="icon" />
+      store count: {{ count }}<br />
+      <button type="button" @click="onIncrement">increment</button>
+      <button type="button" @click="onDecrement">decrement</button>
+    </div>
   </div>
 </template>
 
