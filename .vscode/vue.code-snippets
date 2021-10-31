@@ -19,6 +19,13 @@
       "\t// Ref,",
       "\t// ComputedRef,",
       "} from 'vue'",
+      "import {",
+      "\tuseRoute,",
+      "\tuseRouter,",
+      "\t// onBeforeRouteLeave,",
+      "} from 'vue-router'",
+      "import { useMeta } from 'vue-meta'",
+      "import { useStore } from 'vuex'",
       "",
       "${3}",
       "</script>",
@@ -39,14 +46,13 @@
   "vue3-default-props": {
     "prefix": ["vue3 default props"],
     "body": [
-      "const props = withDefaults(",
-      "\tdefineProps<{",
-      "\t\t${1}: ${2}",
-      "\t}>(),",
-      "\t{",
-      "\t\t${1}: '${3}',",
-      "\t}",
-      ")"
+      "interface Props {",
+      "\t${1:name}: ${2:string}",
+      "}",
+      "",
+      "const props = withDefaults(defineProps<Props>(), {",
+      "\t${1:name}: ${3},",
+      "})"
     ],
     "description": "Base for Vue3 default props",
     "scope": "vue, typescript"
@@ -54,6 +60,12 @@
   "vue3-define-props": {
     "prefix": ["vue3 define props"],
     "body": ["const props = defineProps<{", "\t${1}: ${2}", "}>()"],
+    "description": "Base for Vue3 define props",
+    "scope": "vue, typescript"
+  },
+  "vue3-define-emits": {
+    "prefix": ["vue3 define emits"],
+    "body": ["const emit = defineEmits<{", "\t(e: '${1:click}', ${2:name: string}): void", "}>()"],
     "description": "Base for Vue3 define props",
     "scope": "vue, typescript"
   },

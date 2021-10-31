@@ -3,14 +3,13 @@ import { ref, toRefs } from 'vue'
 
 // set props
 
-const props = withDefaults(
-  defineProps<{
-    msg: string
-  }>(),
-  {
-    msg: '',
-  }
-)
+interface Props {
+  msg: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  msg: '',
+})
 
 const { msg } = toRefs(props)
 
