@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useMeta } from 'vue-meta'
 import { useStore } from 'vuex'
-import SvgIcon from '~/components/modules/SvgIcon.vue'
+import SvgIcon from '~/components/modules/icons/SvgIcon.vue'
 
 // set meta
 

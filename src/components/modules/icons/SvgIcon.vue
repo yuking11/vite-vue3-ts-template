@@ -11,7 +11,7 @@ const props = defineProps<{
 
 const svg = shallowRef('')
 
-import(`../../assets/svg/${props.name}.svg`).then((val) => {
+import(`../../../assets/svg/${props.name}.svg`).then((val) => {
   svg.value = val.default
 })
 </script>

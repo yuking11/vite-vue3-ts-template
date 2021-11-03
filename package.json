@@ -19,6 +19,7 @@
     "lint-staged": "lint-staged",
     "format:script": "eslint --ext .ts,vue --fix --ignore-path .gitignore .",
     "format:style": "stylelint 'src/**/*.{vue,scss,css}' --fix --ignore-path .gitignore",
+    "test": "jest",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -33,21 +34,28 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.11.4",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^8.0.0",
+    "@vue/test-utils": "^2.0.0-rc.16",
     "@yzfe/svgicon": "^1.1.0",
     "@yzfe/vue3-svgicon": "^1.0.1",
     "autoprefixer": "^10.3.7",
+    "babel-jest": "26",
+    "babel-preset-vite": "^1.0.4",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.20.0",
     "husky": "^7.0.4",
+    "jest": "26",
+    "jest-transform-stub": "^2.0.0",
     "lint-staged": "^11.2.3",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
@@ -56,9 +64,11 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^4.0.0",
+    "ts-jest": "26",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vite-plugin-svgicon": "^1.0.0",
+    "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.3.0"
   }
 }
