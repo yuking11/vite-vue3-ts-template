@@ -13,6 +13,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
     "serve": "vite preview",
+    "lint": "yarn lint:script && yarn lint:style",
     "lint:markup": "vue-tsc --noEmit",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint 'src/**/*.{vue,scss,css}' --ignore-path .gitignore",
