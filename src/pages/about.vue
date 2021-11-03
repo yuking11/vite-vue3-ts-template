@@ -38,8 +38,9 @@ const onDecrement = () => {
     <h3>{{ title }}</h3>
     <div>
       <p>
-        <SvgIcon name="info_outline" :width="24" :height="24" title="Information" class="icon" />
+        <SvgIcon name="info_outline" :width="24" :height="24" title="Information" />
         store count: {{ count }}
+        <SvgIcon name="arrow_right" :width="24" :height="24" title="arrow" class="arrow-icon" />
       </p>
       <button type="button" @click="onIncrement">increment</button>
       <button type="button" @click="onDecrement">decrement</button>
@@ -56,7 +57,7 @@ const onDecrement = () => {
   }
 }
 
-.icon {
+.arrow-icon ::v-deep(use) {
   fill: $base-neutral-color;
 }
 </style>
