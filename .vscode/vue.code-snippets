@@ -65,7 +65,13 @@
   },
   "vue3-define-emits": {
     "prefix": ["vue3 define emits"],
-    "body": ["const emit = defineEmits<{", "\t(e: '${1:click}', ${2:name: string}): void", "}>()"],
+    "body": [
+      "interface Emits {",
+      "\t(e: '${1:click}', ${2:name: string}): void",
+      "}",
+      "",
+      "const emit = defineEmits<Emits>()"
+    ],
     "description": "Base for Vue3 define props",
     "scope": "vue, typescript"
   },
