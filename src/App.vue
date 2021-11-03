@@ -28,7 +28,6 @@ const VITE_APP_NAME = import.meta.env.VITE_APP_NAME
 
 #app {
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

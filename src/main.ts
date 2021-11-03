@@ -3,11 +3,8 @@ import { createMetaManager } from 'vue-meta'
 import App from '~/App.vue'
 import router from '~/router'
 import store from '~/store'
-import { VueSvgIconPlugin } from '@yzfe/vue3-svgicon'
-import '@yzfe/svgicon/lib/svgicon.css'
+import 'virtual:svg-icons-register'
 
-const app = createApp(App).use(router).use(store).use(createMetaManager()).use(VueSvgIconPlugin, {
-  tagName: 'VueSvgIcon',
-})
+const app = createApp(App).use(router).use(store).use(createMetaManager())
 
 router.isReady().then(() => app.mount('#app'))

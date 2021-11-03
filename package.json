@@ -45,8 +45,6 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^8.0.0",
     "@vue/test-utils": "^2.0.0-rc.16",
-    "@yzfe/svgicon": "^1.1.0",
-    "@yzfe/vue3-svgicon": "^1.0.1",
     "autoprefixer": "^10.3.7",
     "babel-jest": "26",
     "babel-preset-vite": "^1.0.4",
@@ -67,7 +65,7 @@
     "ts-jest": "26",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
-    "vite-plugin-svgicon": "^1.0.0",
+    "vite-plugin-svg-icons": "^1.0.5",
     "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.3.0"
   }

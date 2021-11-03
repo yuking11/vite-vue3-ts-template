@@ -4,14 +4,18 @@ import SvgIcon from '~/components/modules/icons/SvgIcon.vue'
 
 describe('SvgIcon', () => {
   it('should display Component', () => {
-    const name = 'info_outline'
+    const props = {
+      name: 'info_outline',
+      width: 24,
+      height: 24,
+    }
 
     const wrapper = mount(SvgIcon, {
       global: {
-        stubs: ['VueSvgIcon', 'svgImage'],
+        stubs: ['svgImage'],
         plugins: [store],
       },
-      props: { name },
+      props,
     })
 
     expect(wrapper).toBeTruthy()

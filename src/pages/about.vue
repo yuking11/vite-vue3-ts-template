@@ -37,8 +37,10 @@ const onDecrement = () => {
     <h2>About</h2>
     <h3>{{ title }}</h3>
     <div>
-      <SvgIcon :name="'info_outline'" width="24" height="24" title="Information" class="icon" />
-      store count: {{ count }}<br />
+      <p>
+        <SvgIcon name="info_outline" :width="24" :height="24" title="Information" class="icon" />
+        store count: {{ count }}
+      </p>
       <button type="button" @click="onIncrement">increment</button>
       <button type="button" @click="onDecrement">decrement</button>
     </div>
