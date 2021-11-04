@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "vue": "^3.2.16",
-    "vue-meta": "^3.0.0-alpha.8",
     "vue-router": "4",
     "vuex": "^4.0.2"
   },
@@ -46,6 +45,7 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^8.0.0",
     "@vue/test-utils": "^2.0.0-rc.16",
+    "@vueuse/head": "^0.6.0",
     "autoprefixer": "^10.3.7",
     "babel-jest": "26",
     "babel-preset-vite": "^1.0.4",

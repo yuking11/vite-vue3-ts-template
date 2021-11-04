@@ -1,20 +1,6 @@
-<script setup lang="ts">
-// set data
-
-const VITE_APP_TITLE = import.meta.env.VITE_APP_TITLE
-const VITE_APP_NAME = import.meta.env.VITE_APP_NAME
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <metainfo>
-    <template #title="{ content }">{{
-      content ? `${content} | ${VITE_APP_TITLE}` : VITE_APP_TITLE
-    }}</template>
-    <template #description="{ content }">{{
-      content ? content : `this is ${VITE_APP_NAME} web site.`
-    }}</template>
-  </metainfo>
-
   <div>
     <router-link :to="{ name: 'index' }">Top</router-link> |
     <router-link :to="{ name: 'about' }">About</router-link>

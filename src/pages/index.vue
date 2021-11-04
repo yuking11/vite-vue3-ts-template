@@ -17,17 +17,18 @@ import {
   // PropType,
 } from 'vue'
 import { useStore } from 'vuex'
-import { useMeta } from 'vue-meta'
+import { useHead } from '@vueuse/head'
+import { usePageMeta } from '~/composables/usePageMeta'
 import HelloWorld from '~/components/HelloWorld.vue'
 
 // set meta
 
-useMeta({
-  title: '',
-  description: {
-    content: '',
-  },
-})
+const title = import.meta.env.VITE_APP_TITLE as string
+const description = 'this is vite/vue3/typescript template.'
+
+const siteMeta = usePageMeta(title, description, true)
+
+useHead(siteMeta)
 
 // set data
 

@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { useMeta } from 'vue-meta'
+import { computed } from 'vue'
+import { useHead } from '@vueuse/head'
+import { usePageMeta } from '~/composables/usePageMeta'
 import { useStore } from 'vuex'
 import SvgIcon from '~/components/modules/icons/SvgIcon.vue'
 
 // set meta
 
-const title = ref('about this site.')
+const title = 'about this site.'
+const description = `On this page, you will find information about ${
+  import.meta.env.VITE_APP_NAME
+}.`
 
-useMeta({
-  title: title.value,
-  description: {
-    content: `On this page, you will find information about ${import.meta.env.VITE_APP_NAME}.`,
-  },
-})
+const siteMeta = usePageMeta(title, description)
+
+useHead(siteMeta)
 
 // set data
 
