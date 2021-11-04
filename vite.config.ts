@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
-import viteSvgIcons from 'vite-plugin-svg-icons'
+import Vue from '@vitejs/plugin-vue'
+import Pages from 'vite-plugin-pages'
+import ViteSvgIcons from 'vite-plugin-svg-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,9 +18,10 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    Vue(),
+    Pages(),
     // https://github.com/anncwb/vite-plugin-svg-icons
-    viteSvgIcons({
+    ViteSvgIcons({
       iconDirs: [resolve(process.cwd(), 'src/assets/icon')],
       symbolId: 'icon-[dir]-[name]',
     }),

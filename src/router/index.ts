@@ -1,19 +1,5 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Index from '~/pages/index.vue'
-import About from '~/pages/about.vue'
-
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    name: 'Index',
-    component: Index,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
-  },
-]
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from 'virtual:generated-pages'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

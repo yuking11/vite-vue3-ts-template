@@ -16,8 +16,8 @@ const VITE_APP_NAME = import.meta.env.VITE_APP_NAME
   </metainfo>
 
   <div>
-    <router-link :to="{ name: 'Index' }">Top</router-link> |
-    <router-link :to="{ name: 'About' }">About</router-link>
+    <router-link :to="{ name: 'index' }">Top</router-link> |
+    <router-link :to="{ name: 'about' }">About</router-link>
   </div>
   <router-view />
 </template>
