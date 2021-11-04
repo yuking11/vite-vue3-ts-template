@@ -1785,10 +1785,10 @@
     "@typescript-eslint/types" "5.1.0"
     eslint-visitor-keys "^3.0.0"
 
-"@vitejs/plugin-vue@^1.9.3":
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.9.3.tgz#93d61893ce6c723d0209af0483ec8b91a2cd811f"
-  integrity sha512-yW6H/q+4Mc2PcVjSOelcsMrg/k15DnMUz8jyCFsI04emc3aLwo4AoofUfGnjHUkgirrDxSJLVqQVGhonQ3yykA==
+"@vitejs/plugin-vue@^1.9.4":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.9.4.tgz#4f48485432cbb986a9fb9d254dc33ce30ddccbfa"
+  integrity sha512-0CZqaCoChriPTTtGkERy1LGPcYjGFpi2uYRhBPIkqJqUGV5JnJFhQAgh6oH9j5XZHfrRaisX8W0xSpO4T7S78A==
 
 "@volar/code-gen@^0.27.24":
   version "0.27.24"
@@ -1898,12 +1898,12 @@
   dependencies:
     eslint-config-prettier "^6.0.0"
 
-"@vue/eslint-config-typescript@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-8.0.0.tgz#e7a5aa0cdf5f5d59e05f7ea310e8954a49b8fc41"
-  integrity sha512-8u8Qpg4qfjJoNeRMdHlxif9BcGy4iYSSK4YYW5AFPPRtkBJiCqtoyT72l4F3ZeZII09ax2N6yQeHbQ0CXQi1bA==
+"@vue/eslint-config-typescript@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-9.0.0.tgz#e6a46d4ffb2c82b639fe183ec734569f33b47605"
+  integrity sha512-X5inaB7c8ADWt2ygFshuT5GRw1obXWQKFR7GTvK0q+H9Cuz/BRDLXEHZTx7AxHiA5Qri1q1C1uMCPFiCBAg+6w==
   dependencies:
-    vue-eslint-parser "^7.0.0"
+    vue-eslint-parser "^8.0.0"
 
 "@vue/reactivity@3.2.20", "@vue/reactivity@^3.2.19":
   version "3.2.20"
@@ -7718,10 +7718,10 @@ vite-plugin-svg-icons@^1.0.5:
     svg-baker "1.7.0"
     svgo "^2.7.0"
 
-vite@^2.6.4:
-  version "2.6.10"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.10.tgz#7a4f420c6e2c7d9062c7f9ce4578a817c72b3842"
-  integrity sha512-XbevwpDJMs3lKiGEj0UQScsOCpwHIjFgfzPnFVkPgnxsF9oPv1uGyckLg58XkXv6LnO46KN9yZqJzINFmAxtUg==
+vite@^2.6.13:
+  version "2.6.13"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.13.tgz#16b3ec85a66d5b461ac29a903874d4357f9af432"
+  integrity sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==
   dependencies:
     esbuild "^0.13.2"
     postcss "^8.3.8"
@@ -7864,7 +7864,7 @@ vscode-vue-languageservice@^0.27.0:
     vscode-pug-languageservice "^0.27.24"
     vscode-typescript-languageservice "^0.27.25"
 
-vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
+vue-eslint-parser@^7.10.0:
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.11.0.tgz#214b5dea961007fcffb2ee65b8912307628d0daf"
   integrity sha512-qh3VhDLeh773wjgNTl7ss0VejY9bMMa0GoDG2fQVyDzRFdiU3L7fw74tWZDHNQXdZqxO3EveQroa9ct39D2nqg==
@@ -7876,6 +7876,19 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^6.3.0"
+
+vue-eslint-parser@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-8.0.1.tgz#25e08b20a414551531f3e19f999902e1ecf45f13"
+  integrity sha512-lhWjDXJhe3UZw2uu3ztX51SJAPGPey1Tff2RK3TyZURwbuI4vximQLzz4nQfCv8CZq4xx7uIiogHMMoSJPr33A==
+  dependencies:
+    debug "^4.3.2"
+    eslint-scope "^6.0.0"
+    eslint-visitor-keys "^3.0.0"
+    espree "^9.0.0"
+    esquery "^1.4.0"
+    lodash "^4.17.21"
+    semver "^7.3.5"
 
 vue-jest@^5.0.0-alpha.10:
   version "5.0.0-alpha.10"
