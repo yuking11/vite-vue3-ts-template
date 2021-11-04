@@ -46,7 +46,7 @@
     "@vue/eslint-config-typescript": "^8.0.0",
     "@vue/test-utils": "^2.0.0-rc.16",
     "@vueuse/head": "^0.6.0",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "babel-jest": "26",
     "babel-preset-vite": "^1.0.4",
     "eslint": "^8.1.0",
