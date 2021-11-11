@@ -69,6 +69,6 @@
     "vite-plugin-pages": "^0.18.2",
     "vite-plugin-svg-icons": "^1.0.5",
     "vue-jest": "^5.0.0-alpha.10",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.29.3"
   }
 }
