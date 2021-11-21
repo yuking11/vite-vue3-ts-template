@@ -16,7 +16,7 @@
       "~/*": ["./src/*"]
     }
   },
-  "types": ["@types/jest"],
+  "types": ["@types/jest", "vite-plugin-vue-layouts/client"],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules", ".github", ".history", "dist"]
 }

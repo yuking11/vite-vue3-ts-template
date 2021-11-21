@@ -1,10 +1,4 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>
-    <router-link :to="{ name: 'index' }">Top</router-link> |
-    <router-link :to="{ name: 'about' }">About</router-link>
-  </div>
   <router-view />
 </template>
 

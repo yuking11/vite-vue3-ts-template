@@ -1,3 +1,11 @@
+<route>
+{
+  meta: {
+    layout: "top"
+  }
+}
+</route>
+
 <script setup lang="ts">
 import {
   // onBeforeMount,
@@ -19,7 +27,6 @@ import {
 import { useStore } from 'vuex'
 import { useHead } from '@vueuse/head'
 import { usePageMeta } from '~/composables/usePageMeta'
-import HelloWorld from '~/components/HelloWorld.vue'
 
 // set meta
 
@@ -49,13 +56,9 @@ const onDecrement = () => {
 
 <template>
   <div class="page-index">
-    <img alt="Vue logo" src="@/assets/img/logo.png" />
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-    <div>
-      store count: {{ count }}<br />
-      <button type="button" @click="onIncrement">increment</button>
-      <button type="button" @click="onDecrement">decrement</button>
-    </div>
+    store count: {{ count }}<br />
+    <button type="button" @click="onIncrement">increment</button>
+    <button type="button" @click="onDecrement">decrement</button>
   </div>
 </template>
 
