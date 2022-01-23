@@ -29,6 +29,7 @@
     "*.{ts,js,scss,vue}": "prettier -w -u"
   },
   "dependencies": {
+    "pinia": "^2.0.9",
     "vue": "^3.2.22",
     "vue-router": "4",
     "vuex": "^4.0.2"
