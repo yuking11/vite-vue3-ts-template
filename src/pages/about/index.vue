@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
 import { usePageMeta } from '~/composables/usePageMeta'
-import { useStore } from 'vuex'
+import { useCounterStore } from '~/stores/counter'
 import SvgIcon from '~/components/modules/icons/SvgIcon.vue'
 
 // set meta
@@ -18,18 +18,18 @@ useHead(siteMeta)
 
 // set data
 
-const store = useStore()
+const counterStore = useCounterStore()
 
-const count = computed(() => store.state.common.count)
+const count = computed(() => counterStore.count)
 
 // methods
 
 const onIncrement = () => {
-  store.dispatch('common/increment')
+  counterStore.increment()
 }
 
 const onDecrement = () => {
-  store.dispatch('common/decrement')
+  counterStore.decrement()
 }
 </script>
 

@@ -25,7 +25,7 @@
       "\t// onBeforeRouteLeave,",
       "} from 'vue-router'",
       "import { useMeta } from 'vue-meta'",
-      "import { useStore } from 'vuex'",
+      "// import { useXXXStore } from '~/stores/xxxxx'",
       "",
       "${3}",
       "</script>",

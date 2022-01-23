@@ -1,5 +1,4 @@
 import { mount } from '@vue/test-utils'
-import store from '~/store'
 import SvgIcon from '~/components/modules/icons/SvgIcon.vue'
 
 describe('SvgIcon', () => {
@@ -13,7 +12,6 @@ describe('SvgIcon', () => {
     const wrapper = mount(SvgIcon, {
       global: {
         stubs: ['svgImage'],
-        plugins: [store],
       },
       props,
     })
