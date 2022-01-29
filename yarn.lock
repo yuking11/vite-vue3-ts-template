@@ -1523,10 +1523,10 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@types/svgo@^2.4.2":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@types/svgo/-/svgo-2.6.0.tgz#f0c50eed286422f63b4e3346d8a309b0ea67d58a"
-  integrity sha512-VSdhb3KTOglle1SLQD4+TB6ezj/MS3rN98gOUkXzbTUhG8VjFKHXN3OVgEFlTnW5fYBxt+lzZlD3PFqkwMj36Q==
+"@types/svgo@^2.6.0":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@types/svgo/-/svgo-2.6.1.tgz#ea012623186ba5319d579d56fed8729a65bfdfa4"
+  integrity sha512-4BfUnd19L25BD2iRyZTNuG4pfL9HBs+rvF7zp5maKhbX42uOpc5prGdBXXmCdHlVZfTWq8pNP/vxQt9v8ACxqQ==
   dependencies:
     "@types/node" "*"
 
@@ -7205,7 +7205,7 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
 
-svgo@^2.7.0:
+svgo@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.8.0.tgz#4ff80cce6710dc2795f0c7c74101e6764cfccd24"
   integrity sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg==
@@ -7654,18 +7654,18 @@ vite-plugin-pages@^0.18.2:
     json5 "^2.2.0"
     yaml "^2.0.0-8"
 
-vite-plugin-svg-icons@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/vite-plugin-svg-icons/-/vite-plugin-svg-icons-1.0.5.tgz#8071e3da7c50d5614e9372655b9b91faf91df591"
-  integrity sha512-dzPwIwaxhVzVTQ/NlQgQ/vcZ8jtHFx8xhpVt4iXqM/2G+8HUz6lpew4V8yOprCy2OUAq7gToYhIxT042gKXLMw==
+vite-plugin-svg-icons@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-svg-icons/-/vite-plugin-svg-icons-1.1.0.tgz#a02dd241c6697565a016ac6197bb1ff2ec1a8c98"
+  integrity sha512-dmpr7Wq8vQN6ajBrVTrBxy8wJjQfcP30i73q+40uAZc8p7EwphBNZ+bVTI0enFaCrsITI8y0Ruo/mN/SaJQ6Hw==
   dependencies:
-    "@types/svgo" "^2.4.2"
+    "@types/svgo" "^2.6.0"
     cors "^2.8.5"
-    debug "^4.3.2"
+    debug "^4.3.3"
     etag "^1.8.1"
     fs-extra "^10.0.0"
     svg-baker "1.7.0"
-    svgo "^2.7.0"
+    svgo "^2.8.0"
 
 vite-plugin-vue-layouts@^0.5.0:
   version "0.5.0"
