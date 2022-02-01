@@ -35,6 +35,7 @@ const iconSize = computed(() => `--width: ${props.width}px; --height: ${props.he
 .svg-icon-component {
   --width: 32px;
   --height: 32px;
+
   width: var(--width);
   height: var(--height);
   vertical-align: middle;

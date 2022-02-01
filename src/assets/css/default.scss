@@ -1,7 +1,7 @@
+@use 'sass:color';
+
 // =====================================================
-//
 // Default
-//
 // =====================================================
 
 body,
@@ -27,9 +27,11 @@ body {
 
 a {
   color: $main-color;
+
   &:hover {
-    color: lighten($main-color, 4%);
+    color: color.adjust($main-color, $lightness: 10%);
   }
+
   &:focus {
     outline: none;
   }
@@ -39,19 +41,9 @@ input,
 textarea,
 select {
   border-radius: 4px;
+
   &:focus {
     outline-color: $main-color;
-  }
-}
-
-ol,
-ul {
-  padding-left: $base-space * 1.5;
-}
-
-li {
-  &::before {
-    display: none;
   }
 }
 

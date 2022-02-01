@@ -1,7 +1,5 @@
-// =====================================================
-//
+// =====================================================//
 // Settings
-//
 // =====================================================
 
 // Style config
@@ -21,10 +19,10 @@ $base-space: 1rem;
 // Font
 // ================================== //
 
-//antialiased,subpixel-antialiased,none
+// antialiased,subpixel-antialiased,none
 $font-smoothing: antialiased;
 
-//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+// auto,optimizeSpeed,optimizeLegibility,geometricPrecision
 $text-rendering: auto;
 
 // Base font-size
@@ -41,19 +39,15 @@ $base-font-family: -apple-system, 'BlinkMacSystemFont', Arial, HiraginoSans,
 // ================================== //
 $base-color: #fff;
 $sub-base-color: #ebedef;
-
 $main-color: #0589cb;
-
 $error-main-color: #e32f2f;
 $error-base-color: #fff2f2;
 $error-sub-color: #f88e8e;
-
 $text-color-dark: #212121;
 $text-color-thin: #404040;
 $text-color-neutral: #9fa7ac;
 $text-color-light: #dbdfe3;
 $text-color-bright: #fff;
-
 $base-primary-color: #007bff;
 $base-secondary-color: #6c757d;
 $base-success-color: #28a745;
@@ -87,12 +81,9 @@ $status-white-main-color: #fff;
 $status-white-base-color: #fff;
 $status-black-main-color: #f4f4f4;
 $status-black-base-color: #696969;
-
-$overlay-color: rgba(0, 0, 0, 0.5);
-
+$overlay-color: rgb(0 0 0 / 50%);
 $base-background-color: $base-color;
 $base-font-color: $text-color-dark;
-
 $selection-background-color: $main-color;
 $selection-color: #fff;
 
@@ -102,7 +93,6 @@ $base-placeholder-color: #9f9f9f;
 $base-border-color: #d8dbe0;
 $base-input-border-color: $base-neutral-color;
 $base-disabled-color: $base-neutral-color;
-
 $base-box-shadow: 0 1px 1px 0 rgba($base-black-color, 0.14),
   0 2px 1px -1px rgba($base-black-color, 0.12), 0 1px 3px 0 rgba($base-black-color, 0.2);
 

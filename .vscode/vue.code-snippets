@@ -121,6 +121,18 @@
     "description": "Base for Vue3 File Composition API with SCSS",
     "scope": "vue"
   },
+  "import vue-router": {
+    "prefix": ["import vue-router"],
+    "body": ["import { ${1:useRoute}${2:, useRouter}${3:, onBeforeRouteLeave} } from 'vue-router'"],
+    "description": "import vue-router",
+    "scope": "vue, typescript"
+  },
+  "import pinia": {
+    "prefix": ["import pinia"],
+    "body": ["import { ${1:useXXXXXStore} } from '~/stores/${2:xxxxx}'"],
+    "description": "import pinia",
+    "scope": "vue, typescript"
+  },
   "import my components": {
     "prefix": ["import my components"],
     "body": ["import ${1} from '~/components/${2}/${1}.vue'"],

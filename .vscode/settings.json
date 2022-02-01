@@ -6,6 +6,9 @@
     "source.fixAll.tslint": true, // tslint
     "source.fixAll.stylelint": true // Stylelint
   },
+  "stylelint.validate": ["css", "scss"],
+  "scss.validate": false,
+  "css.validate": false,
   // formatter
   // デフォルトフォーマッターの設定
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -26,6 +29,9 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
   },
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
