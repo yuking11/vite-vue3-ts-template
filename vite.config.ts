@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
-import ViteSvgIcons from 'vite-plugin-svg-icons'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,8 +23,10 @@ export default defineConfig({
     Pages(),
     Layouts(),
     // https://github.com/anncwb/vite-plugin-svg-icons
-    ViteSvgIcons({
-      iconDirs: [resolve(process.cwd(), 'src/assets/icon')],
+    createSvgIconsPlugin({
+      // Specify the icon folder to be cached
+      iconDirs: [resolve(__dirname, 'src/assets/icon')],
+      // Specify symbolId format
       symbolId: 'icon-[dir]-[name]',
     }),
   ],
