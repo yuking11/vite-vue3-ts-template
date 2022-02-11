@@ -1733,7 +1733,7 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@types/svgo@^2.6.0":
+"@types/svgo@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@types/svgo/-/svgo-2.6.1.tgz#ea012623186ba5319d579d56fed8729a65bfdfa4"
   integrity sha512-4BfUnd19L25BD2iRyZTNuG4pfL9HBs+rvF7zp5maKhbX42uOpc5prGdBXXmCdHlVZfTWq8pNP/vxQt9v8ACxqQ==
@@ -6056,6 +6056,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathe@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
+  integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -7653,16 +7658,17 @@ vite-plugin-pages@^0.18.2:
     json5 "^2.2.0"
     yaml "^2.0.0-8"
 
-vite-plugin-svg-icons@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-svg-icons/-/vite-plugin-svg-icons-1.1.0.tgz#a02dd241c6697565a016ac6197bb1ff2ec1a8c98"
-  integrity sha512-dmpr7Wq8vQN6ajBrVTrBxy8wJjQfcP30i73q+40uAZc8p7EwphBNZ+bVTI0enFaCrsITI8y0Ruo/mN/SaJQ6Hw==
+vite-plugin-svg-icons@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-svg-icons/-/vite-plugin-svg-icons-2.0.1.tgz#7269a0962593509f371b9e2bb344d469db2c6df9"
+  integrity sha512-6ktD+DhV6Rz3VtedYvBKKVA2eXF+sAQVaKkKLDSqGUfnhqXl3bj5PPkVTl3VexfTuZy66PmINi8Q6eFnVfRUmA==
   dependencies:
-    "@types/svgo" "^2.6.0"
+    "@types/svgo" "^2.6.1"
     cors "^2.8.5"
     debug "^4.3.3"
     etag "^1.8.1"
     fs-extra "^10.0.0"
+    pathe "^0.2.0"
     svg-baker "1.7.0"
     svgo "^2.8.0"
 
