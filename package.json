@@ -50,7 +50,7 @@
     "babel-jest": "26",
     "babel-preset-vite": "^1.0.4",
     "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^8.4.0",
     "husky": "^7.0.4",
     "jest": "26",
