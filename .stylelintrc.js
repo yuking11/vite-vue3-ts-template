@@ -16,6 +16,21 @@ module.exports = {
   rules: {
     indentation: 2,
     'font-family-name-quotes': 'always-unless-keyword',
+    'function-url-quotes': 'never',
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: [
+          'v-bind',
+          'fs',
+          'z',
+          '/^color\\..+/',
+          '/^map\\..+/',
+          '/^list\\..+/',
+          '/^math\\..+/',
+        ],
+      },
+    ],
     'scss/at-rule-no-unknown': true,
     'at-rule-no-unknown': [
       true,

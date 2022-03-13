@@ -7,7 +7,7 @@
 // text-indent
 // ================================== //
 @mixin indent($margin: 1em) {
-  text-indent: -($margin);
+  text-indent: (-$margin);
   padding-left: $margin;
 }
 

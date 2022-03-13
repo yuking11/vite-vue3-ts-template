@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
+    "isolatedModules": true,
     "target": "esnext",
-    "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
