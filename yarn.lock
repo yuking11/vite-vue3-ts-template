@@ -2253,10 +2253,10 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
-happy-dom@^2.46.3:
-  version "2.46.3"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-2.46.3.tgz#04f2da82693f3a5c02ea565f3a82c44753938539"
-  integrity sha512-bpzk1NjkB0EGRxb1Nxwjd87VjWcYYFS3v4BuVAZAnpBJAd/Uz3AFgE/0g0ntc30yfD8DzPo9Gd/2nicP0xGiWg==
+happy-dom@^2.47.2:
+  version "2.47.2"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-2.47.2.tgz#c45f12a572bbc950bcac9d464491168b35260922"
+  integrity sha512-AuB34J7tZGHHdgGcES4SuUntaVqsWpHUiRfl2j/HCYBY+XsAPUcysadrBWGbRMGkEgCCIR7zet+I3V9pNB3wXA==
   dependencies:
     css.escape "^1.5.1"
     he "^1.1.1"
