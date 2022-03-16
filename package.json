@@ -52,7 +52,7 @@
     "happy-dom": "^2.46.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
-    "postcss": "^8.4.8",
+    "postcss": "^8.4.11",
     "postcss-html": "^1.3.0",
     "postcss-scss": "^4.0.3",
     "prettier": "^2.5.1",
