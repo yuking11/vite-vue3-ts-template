@@ -69,6 +69,6 @@
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vitest": "^0.7.12",
-    "vue-tsc": "^0.33.9"
+    "vue-tsc": "^0.34.6"
   }
 }
