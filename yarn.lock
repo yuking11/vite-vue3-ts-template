@@ -2269,10 +2269,10 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-happy-dom@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-3.1.0.tgz#dad86056ac2ee3d5b4172fba41fe3b4a4e1cea4b"
-  integrity sha512-BewZQwLdu6JS9HYT7enB2toju80OjSjl44+3HXMB3hT+2skC9Mja+/N/b+SbtnwJCMbQqiZVzy/RXevPPuBIXQ==
+happy-dom@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-3.1.1.tgz#cefc1e48b9f5f750d634d0f1732220fdb42e4534"
+  integrity sha512-yomqZv0JJ3FSQ/OZXiDSNOqw/vxZEzrFpxXausyyGPMICZs3KIGfQt+X/007abXkQWRb1SDeetM4PqOM0cagfQ==
   dependencies:
     css.escape "^1.5.1"
     he "^1.2.0"
@@ -3917,10 +3917,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.50.1:
-  version "1.50.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.50.1.tgz#e9b078a1748863013c4712d2466ce8ca4e4ed292"
-  integrity sha512-noTnY41KnlW2A9P8sdwESpDmo+KBNkukI1i8+hOK3footBUcohNHtdOJbckp46XO95nuvcHDDZ+4tmOnpK3hjw==
+sass@^1.51.0:
+  version "1.51.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.51.0.tgz#25ea36cf819581fe1fe8329e8c3a4eaaf70d2845"
+  integrity sha512-haGdpTgywJTvHC2b91GSq+clTKGbtkkZmVAb82jZQN/wTy6qs8DdFm2lhEQbEwrY0QDRgSQ3xDurqM977C3noA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
