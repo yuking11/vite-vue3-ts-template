@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "pinia": "^2.0.14",
-    "vue": "^3.2.33",
+    "vue": "^3.2.37",
     "vue-router": "4"
   },
   "devDependencies": {
@@ -68,7 +68,7 @@
     "vite-plugin-pages": "^0.23.0",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-layouts": "^0.6.0",
-    "vitest": "^0.9.4",
+    "vitest": "^0.14.2",
     "vue-tsc": "^0.34.11"
   }
 }
