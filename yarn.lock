@@ -4904,10 +4904,10 @@ vary@^1:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vite-plugin-pages@^0.24.2:
-  version "0.24.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.24.2.tgz#9b7201fac8f58d6d5a295a4898b14aec11d061c8"
-  integrity sha512-AmrHa6gi6n0mZReKzQTQ1uuf17fd1ziRDjNvSh0NTWNnDgA2si+hC8p63s3KyEmJS5lOE/rEeO4NBaRkY3sY3g==
+vite-plugin-pages@^0.24.3:
+  version "0.24.3"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.24.3.tgz#1bea76dc1e90a9a8b4475e7862870a3d8f2c2982"
+  integrity sha512-hq2ug7S3hYoPmEY2PXhbMUPiKBXhmhyVwDQKzs0o3rjmd4yybUA2cYP9MB+Zassi34Q40vW9vgd8dKB8DUR7wQ==
   dependencies:
     "@types/debug" "^4.1.7"
     debug "^4.3.4"
