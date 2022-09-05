@@ -31,7 +31,7 @@
     "*.{ts,js,scss,vue}": "prettier -w -u"
   },
   "dependencies": {
-    "pinia": "^2.0.18",
+    "pinia": "^2.0.21",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
   },
