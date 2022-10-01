@@ -788,10 +788,32 @@
   resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.2.tgz#0b5edd683366153d5bc5a91edc62f292118710eb"
   integrity sha512-E2P4oXSaWDqTZNbmKZFVLrNN/siVN78YkEqs7pHryWerrlZR9bBFLWdJwRoguX45Ru6HxIflzKl4vQvwRMwm5g==
 
-"@vueuse/head@^0.7.6":
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-0.7.6.tgz#39eb2aa593db6f02d10ba469b33d8cfbce038183"
-  integrity sha512-cOWqCkT3WiF5oEpw+VVEWUJd9RLD5rc7DmnFp3cePsejp+t7686uKD9Z9ZU7Twb7R/BI8iexKTmXo9D/F3v6UA==
+"@vueuse/head@^0.7.12":
+  version "0.7.12"
+  resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-0.7.12.tgz#bdb2185654399d10b10c4e94b52f6129e9ca4f67"
+  integrity sha512-sRcrE6VohiHInQR0sB0U8H8x2hAKdo+AIhd5PWBLx1jUp2vwyeQyA/4rlCzP5CMDB8z61MLvsOCApFJrRMRtTQ==
+  dependencies:
+    "@zhead/schema-vue" "^0.7.3"
+
+"@vueuse/shared@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-9.2.0.tgz#7831051b2c1d01c3413c749468ee53a86024510e"
+  integrity sha512-NnRp/noSWuXW0dKhZK5D0YLrDi0nmZ18UeEgwXQq7Ul5TTP93lcNnKjrHtd68j2xFB/l59yPGFlCryL692bnrA==
+  dependencies:
+    vue-demi "*"
+
+"@zhead/schema-vue@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@zhead/schema-vue/-/schema-vue-0.7.3.tgz#cc87e5884b0bdeeb67d1207e05478eef85bba8af"
+  integrity sha512-X9wIugL/7fFoeVbxPDgRvBLdKt2k243ZezU4N85iCHjs4OaGTgXUPQVfb9+uP7dSj2kMSAvhvY6fKe7D9TzbHA==
+  dependencies:
+    "@vueuse/shared" "^9.2.0"
+    "@zhead/schema" "0.7.3"
+
+"@zhead/schema@0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@zhead/schema/-/schema-0.7.3.tgz#de1c867673c83be0de18588d03b4c07000b2a077"
+  integrity sha512-z7TDtS5YihDW1w5Xk/P5iZ5bHuEajAGsRFs8ipgVSKZSqHy/7Tc4mC6FUfwFciHOj1efMHWf+tFY+byKUdVKug==
 
 JSONStream@^1.0.4:
   version "1.3.5"
