@@ -45,7 +45,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "@vue/test-utils": "^2.0.2",
-    "@vueuse/head": "^0.7.12",
+    "@vueuse/head": "^0.9.8",
     "autoprefixer": "^10.4.12",
     "c8": "^7.12.0",
     "eslint": "^8.25.0",
