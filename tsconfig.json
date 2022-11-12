@@ -17,7 +17,13 @@
       "~/*": ["./src/*"]
     }
   },
-  "types": ["@types/jest", "vite-plugin-vue-layouts/client"],
+  "types": [
+    "vitest",
+    "vitest/globals",
+    "vite/client",
+    "vite-plugin-pages/client",
+    "vite-plugin-vue-layouts/client"
+  ],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules", ".github", ".history", "dist"]
 }
