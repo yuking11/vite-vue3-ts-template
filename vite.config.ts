@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import Vue from '@vitejs/plugin-vue'
@@ -36,5 +38,9 @@ export default defineConfig({
         additionalData: `@use "sass:math";@import "~/assets/css/_includes";`,
       },
     },
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
   },
 })
